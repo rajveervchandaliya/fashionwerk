@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "font1";
+  src: url(./font/63fd93c92039220238a118fe_GeneralSans-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* img {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0%);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-sec img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-sec .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+main .sec-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+main .sec-2 .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .sec-2 .top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: entry 1s linear 0s;
+}
+@keyframes entry {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .sec-2 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .sec-2 .bottom p {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+main .sec-2 .bottom h1 {
+  font-family: "font1";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .sec-2 .bottom .services {
+  display: flex;
+  flex-direction: column;
+}
+main .sec-2 .bottom .services .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+main .sec-2 .bottom .services .services-list h2 {
+  font-family: font1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+main .sec-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .sec-3 .serv-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .sec-3 .serv-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sec-3 .text {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+main .sec-3 .text p {
+  font-family: monospace;
+}
+main .sec-3 .text .vertical-text p {
+  font-family: monospace;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  padding: 0.4rem;
+}
+main .sec-3 .text .bot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .sec-3 .text .bot p {
+  font-family: monospace;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+main .sec-3 .text h2 {
+  font-family: "font1";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .sec-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+}
+main .sec-4 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .sec-4 .left h2 {
+  font-family: "font1";
+  text-transform: uppercase;
+  font-size: 2.7rem;
+}
+main .sec-4 .left .our-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+main .sec-4 .left .our-services h3 {
+  font-family: font1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+main .sec-4 .left .our-services p {
+  font-family: monospace;
+  text-transform: initial;
+  font-size: 1rem;
+  opacity: 0.4;
+  line-height: 1.6;
+}
+main .sec-4 .left .our-services .about- {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+main .sec-4 .left .our-services .about- h2 {
+  font-family: "font1";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .sec-4 .left .our-services .about- p {
+  font-family: monospace;
+  text-transform: uppercase;
+  opacity: 1;
+}
+main .sec-4 .left .our-services .about- i {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(0, 0, 0, 0.975);
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+main .sec-4 .right {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .sec-4 .right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sec-5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  gap: 1rem;
+}
+main .sec-5 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sec-5 .thumbnail {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .sec-5 .thumbnail img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sec-5 .thumbnail .hide {
+  display: none;
+}
+main .sec-5 .thumbnail .our-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+main .sec-5 .thumbnail .our-services h3 {
+  font-family: font1;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  opacity: 0.7;
+}
+main .sec-5 .thumbnail .our-services p {
+  font-family: monospace;
+  text-transform: initial;
+  font-size: 1rem;
+  opacity: 0.4;
+  line-height: 1.6;
+}
+main .sec-5 .thumbnail .our-services .about- {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+main .sec-5 .thumbnail .our-services .about- h2 {
+  font-family: "font1";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .sec-5 .thumbnail .our-services .about- p {
+  font-family: monospace;
+  text-transform: uppercase;
+  opacity: 1;
+}
+main .sec-5 .thumbnail .our-services .about- i {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(0, 0, 0, 0.975);
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 3rem;
+    gap: 1rem;
+  }
+  main img {
+    animation-range: entry 0 cover 40%;
+  }
+  main .hero-sec p {
+    font-size: 1.5rem;
+  }
+  main .sec-2 {
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+  main .sec-2 .top {
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  main .sec-2 .top img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .sec-2 .bottom {
+    width: 50%;
+  }
+  main .sec-2 .bottom h1 {
+    font-family: "font1";
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  main .sec-2 .bottom p {
+    font-size: 1.5rem;
+  }
+  main .sec-2 .bottom .services {
+    margin-top: auto;
+  }
+  main .sec-2 .bottom .services .services-list {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  main .sec-2 .bottom .services .services-list h2 {
+    font-family: font1;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    opacity: 0.7;
+  }
+  main .sec-3 {
+    padding: 2rem 0;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  main .sec-3 .serv-img {
+    width: 70%;
+    aspect-ratio: 1/1;
+  }
+  main .sec-3 .serv-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .sec-3 div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .sec-3 .text {
+    width: 100%;
+  }
+  main .sec-3 .text p {
+    font-size: 1.5rem;
+  }
+  main .sec-3 .text .bot p {
+    font-family: monospace;
+    text-transform: initial;
+    font-size: 1.3rem;
+    opacity: 0.4;
+    margin-top: auto;
+    width: 70%;
+  }
+  main .sec-3 .text .bot h2 {
+    font-family: "font1";
+    font-size: 5.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  main .sec-4 {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .sec-4 .left {
+    width: 50%;
+    gap: 2rem;
+  }
+  main .sec-4 .left h2 {
+    font-family: "font1";
+    text-transform: uppercase;
+    font-size: 6rem;
+    line-height: 1;
+    width: 50%;
+  }
+  main .sec-4 .left .part1 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main .sec-4 .left .part1 .our-services h3 {
+    font-family: font1;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+  main .sec-4 .left .part1 .our-services p {
+    font-family: monospace;
+    text-transform: initial;
+    font-size: 1rem;
+    opacity: 0.4;
+    line-height: 1.6;
+    width: 80%;
+  }
+  main .sec-4 .left .part1 .our-services .about- p {
+    font-family: monospace;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  main .sec-4 .right {
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  main .sec-4 .right img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .sec-5 {
+    flex-direction: column;
+    gap: 0;
+  }
+  main .sec-5 #rev {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .sec-5 .work {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 70VH;
+  }
+  main .sec-5 .work .thumbnail {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  main .sec-5 .work .thumbnail .our-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 0;
+  }
+  main .sec-5 .work .thumbnail .our-services h3 {
+    font-family: font1;
+    text-transform: uppercase;
+    font-size: 4rem;
+    opacity: 0.7;
+  }
+  main .sec-5 .work .thumbnail .our-services p {
+    font-family: monospace;
+    text-transform: initial;
+    font-size: 1rem;
+    opacity: 0.4;
+    line-height: 1.6;
+  }
+  main .sec-5 .work .thumbnail .our-services .about- p {
+    font-family: monospace;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: auto;
+    font-size: 1rem;
+  }
+  main .sec-5 .work .hide {
+    display: block;
+  }
+  main .sec-5 .work img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+}/*# sourceMappingURL=style.css.map */
